@@ -1,0 +1,41 @@
+{
+  "name": "mailbird-challenge-frontend",
+  "version": "0.0.1",
+  "description": "Implementation of the Mailbird Challenge Frontend",
+  "author": "Abdessamad El Bahri <reversablecode@outlook.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.6.6",
+    "@tailwindcss/line-clamp": "^0.4.0",
+    "classnames": "^2.3.1",
+    "next": "12.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.33.1",
+    "react-icons": "^4.4.0",
+    "react-letter": "^0.3.1",
+    "react-timeago": "^7.1.0",
+    "sass": "^1.53.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.0.3",
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "@types/react-timeago": "^4.1.3",
+    "autoprefixer": "^10.4.7",
+    "eslint": "8.19.0",
+    "eslint-config-next": "12.2.1",
+    "postcss": "^8.4.14",
+    "prettier": "^2.7.1",
+    "tailwindcss": "^3.1.5",
+    "typescript": "4.7.4"
+  }
+}

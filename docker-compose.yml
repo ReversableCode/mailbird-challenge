@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  backend:
+    image: reversablecode/mailbird-challenge-backend:latest
+    ports:
+      - "9000:9000"
+    restart: always
+    environment:
+      - SESSION_SECRET=${SESSION_SECRET}
+
+  frontend:
+    image: reversablecode/mailbird-challenge-frontend:latest
+    ports:
+      - "3000:3000"
+    restart: always
+    environment:
+      - NEXT_PUBLIC_API_URL=/api
+
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+    ports:
+      - "80:80"
+    depends_on:
+      - frontend
+      - backend
+    restart: always
